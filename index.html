@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <section class="main">
+    <div class="container">
+        <div class="wpapper">
+      
+   
+            <img  src="images/header_logo 1.png" alt="logo">
+        
+    <nav class="nav">
+        <a href="#">ORDER</a>
+        <a href="#">ABOUT</a>
+        <a href="#">RESULTS</a>
+    </nav>
+</div>
+
+
+<h1>Pet Naturals of Vermont, Calming, For Cats</h1>
+
+<div class="box">
+    <div class="1">
+<div class="cat">Your cat deserves the best pet supplement the world has to offer. That's what's in the package.</div>
+
+<div class="main_deckr">
+    <div class="deckr">
+
+        <div> <img class="i" src="./images/icons8-кошачий-след-24 1 (1).png" alt=""> Features a patented calming blend</div>
+        <div><img class="i" src="./images/icons8-кошачий-след-24 1 (1).png" alt="">Doesn’t contain herbal ingredients</div>
+        <div> <img class="i" src="./images/icons8-кошачий-след-24 1 (1).png" alt="">Helps manage everyday stress</div>
+    
+</div>
+</div>
+</div>
+
+<div class="d">
+    <img class="defore" src="/images/pngegg 1.png" alt="">
+    <img class="center" src="/images/5 1.png" alt="">
+    <img class="after" src="/images/pngegg 2.png" alt="">
+</div>
+
+<!-- <img class="cats" src="/images/img (1).jpg" alt=""> -->
+
+<div class="form">
+    <div class="squre"> 
+        <div class="time">TIME LEFT</div>
+    <div class="countdown">2:00:00</div>
+    <div class="price">
+    <div class="old_price">120uah</div>
+    <div class="new_price">60uah</div></div>
+   
+</div>
+<div>
+    <form>
+   
+        <input type="text" name="name" value="Name" placeholder="name">
+        <input value="+38 (0__) ___ ____" class="tel">
+        <button class="btn">ORDER</button>
+    </form>
+<div>Order date: 17.11.2021</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="about">
+    <div class="container">
+        <div class="gr">From the manufacturer</div>
+        <div class="about_cards">
+            <div class="about_card">
+                <div class="card_img">
+                    <img class="imges" src="images/—Pngtree—cat sleeping_3652099 1.png" alt="logo">
+                </div>
+                <div class="card_deckr">
+                    <div class="card_head">Keep Calm and Carry On</div>
+                    <div class="card_text">Are you searching for a better way to ease your pet’s separation anxiety or stress? Calming chews help relieve
+                        pet stress without corn, wheat or artificial ingredients. </div>
+                </div>
+            </div>
+            <div class="about_card">
+                <div class="card_img">
+                    <img class="imges" src="images/—Pngtree—cat sleeping_3652099 1.png" alt="logo">
+                </div>
+                <div class="card_deckr">
+                    <div class="card_head">Keep Calm and Carry On</div>
+                    <div class="card_text">Are you searching for a better way to ease your pet’s separation anxiety or stress? Calming chews help relieve
+                        pet stress without corn, wheat or artificial ingredients. </div>
+                </div>
+            </div>
+            <div class="about_card">
+                <div class="card_img">
+                    <img class="imges" src="images/—Pngtree—cat sleeping_3652099 1.png" alt="logo">
+                </div>
+                <div class="card_deckr">
+                    <div class="card_head">Keep Calm and Carry On</div>
+                    <div class="card_text">Are you searching for a better way to ease your pet’s separation anxiety or stress? Calming chews help relieve
+                        pet stress without corn, wheat or artificial ingredients. </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="footer_header">Best Uses for Calming Chews</div>
+        <div class="footer_wrapeer">
+            <div class="footer_hex">
+        <div class="footer_deckr">Car rides. Vet visits. Thunderstorms. Boarding. Parties. These are just a handful of times when Calming chews may come in handy. Does your dog hate to be left home alone? Does your cat love hiding under the bed? Serve up a Calming chew to help soothe your furry pal’s anxiety and make your life easier, too!<br>
+
+            <br>For Best Results:<br>
+            
+            <br>We recommend administering Calming chews 30 minutes prior to a stressful event. The 30-minute activation period gives you a chance to increase dosage if you’re not seeing expected results. Calming is safe for unique stress inducing events and for long-term use to help manage everyday stress.</div>
+        </div>
+        <div class="deckr_img"><img src="/images/c5f4c71a-1c94-4506-92b2-5be1b61d4124 1.jpg" alt=""></div>
+    </div>
+    </div>
+</section>
+</body>
+<script>window.addEventListener("DOMContentLoaded", function() {
+    [].forEach.call( document.querySelectorAll('.tel'), function(input) {
+    var keyCode;
+    function mask(event) {
+        event.keyCode && (keyCode = event.keyCode);
+        var pos = this.selectionStart;
+        if (pos < 3) event.preventDefault();
+        var matrix = "+38 (0__) ___ ____",
+            i = 0,
+            def = matrix.replace(/\D/g, ""),
+            val = this.value.replace(/\D/g, ""),
+            new_value = matrix.replace(/[_\d]/g, function(a) {
+                return i < val.length ? val.charAt(i++) || def.charAt(i) : a
+            });
+        i = new_value.indexOf("_");
+        if (i != -1) {
+            i < 5 && (i = 4);
+            new_value = new_value.slice(0, i)
+        }
+        var reg = matrix.substr(0, this.value.length).replace(/_+/g,
+            function(a) {
+                return "\\d{1," + a.length + "}"
+            }).replace(/[+()]/g, "\\$&");
+        reg = new RegExp("^" + reg + "$");
+        if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+        if (event.type == "blur" && this.value.length < 5)  this.value = ""
+    }
+
+    input.addEventListener("input", mask, false);
+    input.addEventListener("focus", mask, false);
+    input.addEventListener("blur", mask, false);
+    input.addEventListener("keydown", mask, false)
+
+  });
+
+});</script>
+</html>
